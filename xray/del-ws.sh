@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Manternet
+# My Telegram : https://t.me/BagoesVpn
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -52,4 +52,4 @@ echo "==============================="
 echo "Username  : $user"
 echo "Expired   : $exp"
 echo "==============================="
-echo "Script By Gembox"
+echo "Script Bagoes Vpn"

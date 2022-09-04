@@ -195,7 +195,7 @@ echo ""
 wget -q https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
-#wget -q "https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/ssh/cf.sh" && chmod +x cf.sh && ./cf.sh
+wget -q "https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/ssh/cf.sh" && chmod +x cf.sh && ./cf.sh
 clear
 yellow "Add Domain for vmess/vless/trojan dll"
 echo " "
@@ -229,7 +229,7 @@ clear
 wget https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/bckp/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 wget https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
-#wget https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh
+wget https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.

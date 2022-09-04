@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Mardhex
+# My Telegram : https://t.me/BagoesVpn
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -53,5 +53,5 @@ oth=$(cat /tmp/other.txt | sort | uniq | nl)
 echo "other";
 echo "$oth";
 echo "----------------------------------------"
-echo "Script By Mardhex"
+echo "Script Bagoes Vpn"
 rm -rf /tmp/other.txt

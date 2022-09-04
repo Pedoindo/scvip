@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/kmardhex/swip/main/main/allow > /root/tmp
+    curl -sS https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/main/allow > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -22,7 +22,7 @@ BURIQ () {
 }
 # https://raw.githubusercontent.com/kmardhex/swip/main/main/allow 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/kmardhex/swip/perizinan/main/main/allow | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/anggradiantoro/vipkuh/perizinan/main/main/allow | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -39,7 +39,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/kmardhex/swip/main/main/allow | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/main/allow | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -107,20 +107,14 @@ if [ "" = "$PKG_OK" ]; then
   sleep 1
   echo ""
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 1. apt update -y"
-  sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 2. apt upgrade -y"
-  sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 3. apt dist-upgrade -y"
-  sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 4. reboot"
+  echo -e "[ ${tyblue}NOTES${NC} ] 1. Turu"
   sleep 1
   echo ""
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
+  echo -e "[ ${tyblue}NOTES${NC} ] After Turu"
   sleep 1
   echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-  echo -e "[ ${tyblue}NOTES${NC} ] if you understand then tap enter now"
+  echo -e "[ ${tyblue}NOTES${NC} ] enter now"
   read
 else
   echo -e "[ ${green}INFO${NC} ] Oke installed"
@@ -198,10 +192,10 @@ fi
 fi
 
 echo ""
-wget -q https://raw.githubusercontent.com/kmardhex/swip/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
-#wget -q "https://raw.githubusercontent.com/kmardhex/swip/main/ssh/cf.sh" && chmod +x cf.sh && ./cf.sh
+#wget -q "https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/ssh/cf.sh" && chmod +x cf.sh && ./cf.sh
 clear
 yellow "Add Domain for vmess/vless/trojan dll"
 echo " "
@@ -225,17 +219,17 @@ echo -e "$green      Install SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/kmardhex/swip/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/kmardhex/swip/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/kmardhex/swip/main/bckp/set-br.sh && chmod +x set-br.sh && ./set-br.sh
-wget https://raw.githubusercontent.com/kmardhex/swip/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
-#wget https://raw.githubusercontent.com/kmardhex/swip/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh
+wget https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/bckp/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+#wget https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -262,7 +256,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/kmardhex/swip/main/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/versi  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
@@ -274,7 +268,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ MDX CHANNEL ]-===================="
+echo "=====================-[ Bagoes Vpn ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -316,7 +310,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created By MDX CHANNEL ]-==============="
+echo "===============-[ Bagoes Vpn ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt

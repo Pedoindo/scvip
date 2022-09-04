@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Mardhex
+# My Telegram : https://t.me/BagoesVpn
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -60,4 +60,4 @@ echo "==============================="
 echo "Username  : $user"
 echo "Expired   : $exp4"
 echo "==============================="
-echo "Script By Manternet"
+echo "Script Bagoes Vpn"

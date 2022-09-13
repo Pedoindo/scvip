@@ -491,14 +491,14 @@ systemctl restart nginx
 systemctl enable runn
 systemctl restart runn
 
-wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xray/add-ws.sh" && chmod +x /usr/bin/add-ws
-wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xray/add-vless.sh" && chmod +x /usr/bin/add-vless
-wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/anggradiantoro/vipkuh/xray/add-tr.sh" && chmod +x /usr/bin/add-tr
-wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xray/del-ws.sh" && chmod +x /usr/bin/del-ws
-wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xray/cek-ws.sh" && chmod +x /usr/bin/cek-ws
-wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
-wget -q -O /usr/bin/crtv2ray "https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xray/crt.sh" && chmod +x /usr/bin/crtv2ray
-wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/xray/add-ssws.sh" && chmod +x /usr/bin/add-ssws
+wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/Pedoindo/scvip/main/xray/add-ws.sh" && chmod +x /usr/bin/add-ws
+wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/Pedoindo/scvip/main/xray/add-vless.sh" && chmod +x /usr/bin/add-vless
+wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/Pedoindo/scvip/xray/add-tr.sh" && chmod +x /usr/bin/add-tr
+wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/Pedoindo/scvip/main/xray/del-ws.sh" && chmod +x /usr/bin/del-ws
+wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/Pedoindo/scvip/main/xray/cek-ws.sh" && chmod +x /usr/bin/cek-ws
+wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/Pedoindo/scvip/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
+wget -q -O /usr/bin/crtv2ray "https://raw.githubusercontent.com/Pedoindo/scvip/main/xray/crt.sh" && chmod +x /usr/bin/crtv2ray
+wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/Pedoindo/scvip/main/xray/add-ssws.sh" && chmod +x /usr/bin/add-ssws
 sleep 1
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 yellow "xray/Vmess"

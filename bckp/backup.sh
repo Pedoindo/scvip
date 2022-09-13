@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/main/allow > /root/tmp
+    curl -sS https://raw.githubusercontent.com/Pedoindo/scvip/main/main/allow > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -22,7 +22,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/main/allow | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/Pedoindo/scvip/main/main/allow | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -39,7 +39,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/main/allow | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/Pedoindo/scvip/main/main/allow | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -67,7 +67,7 @@ IP=$(curl -sS ipv4.icanhazip.com);
 date=$(date +"%Y-%m-%d")
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-NameUser=$(curl -sS https://raw.githubusercontent.com/anggradiantoro/vipkuh/main/main/allow | grep $MYIP | awk '{print $2}')
+NameUser=$(curl -sS https://raw.githubusercontent.com/Pedoindo/scvip/main/main/allow | grep $MYIP | awk '{print $2}')
 
 
 clear
@@ -131,7 +131,7 @@ Save_And_Exit () {
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/sallxd/userbackup
+    git remote add origin https://github.com/Pedoindo/userbackup
     git push -f https://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@github.com/bokir-tampan/userbackup.git &> /dev/null
 }
 
@@ -147,7 +147,7 @@ sleep 1
 echo -e "[ ${green}INFO${NC} ] Processing updating server...... "
 Save_And_Exit
 fi
-link="https://raw.githubusercontent.com/bokir-tampan/userbackup/main/$NameUser/$NameUser.zip"
+link="https://raw.githubusercontent.com/Pedoindo/userbackup/main/$NameUser/$NameUser.zip"
 sleep 1
 echo -e "[ ${green}INFO${NC} ] Backup done "
 sleep 1

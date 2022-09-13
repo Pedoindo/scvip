@@ -132,8 +132,8 @@ clear;clear;clear
 
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "                ${YELLOW}(${NC}${GREEN} STATUS SERVICE INFORMATION ${NC}${YELLOW})${NC}"
-echo -e "         OWNER : ${GREEN}MDX CHANNEL ${NC}${YELLOW}(${NC} ${GREEN}FsidVPN ${NC}${YELLOW})${NC}"
-echo -e "       © Copyright By MDX CHANNEL ${YELLOW}(${NC} 2021-2022 ${YELLOW})${NC}"
+echo -e "         OWNER : ${GREEN}William ${NC}${YELLOW}(${NC} ${GREEN}WilliamVPN ${NC}${YELLOW})${NC}"
+echo -e "       © Copyright By William ${YELLOW}(${NC} 2021-2022 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 echo -e "${RED_BG}                     Sytem Information                    ${NC}"

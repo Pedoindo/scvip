@@ -68,24 +68,38 @@ else
 Exp=$(curl -sS https://raw.githubusercontent.com/Pedoindo/scvip/main/main/allow | grep $MYIP | awk '{print $3}')
 fi
 clear
-echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;41;36m                 INFO SERVER                \E[0m"
-echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
+echo -e "\e[36m╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m"
+echo -e " \E[0;41;36m        ⇱ AutoScript By Will Project ⇲        \E[0m"
+echo -e " \E[0;41;36m            ⇱ Informasi VPS SERVER ⇲            \E[0m"
+echo -e "\e[36m╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m"
 uphours=`uptime -p | awk '{print $2,$3}' | cut -d , -f1`
 upminutes=`uptime -p | awk '{print $4,$5}' | cut -d , -f1`
 uptimecek=`uptime -p | awk '{print $6,$7}' | cut -d , -f1`
 cekup=`uptime -p | grep -ow "day"`
-IPVPS=$(curl -s ipinfo.io/ip )
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
+WKT=$(curl -s ipinfo.io/timezone )
+IPVPS=$(curl -s ipv4.icanhazip.com )
 serverV=$( curl -sS https://raw.githubusercontent.com/bokir-tampan/test/main/versi)
 
 if [ "$cekup" = "day" ]; then
-echo    -e   "System Uptime   :  $uphours $upminutes $uptimecek"
+echo -e " ⚙️ System Uptime   :  $uphours $upminutes $uptimecek"
 else
-echo -e   "System Uptime   :  $uphours $upminutes"
+echo -e " ⚙️ System Uptime   :  $uphours $upminutes"
 fi
-echo -e "Use Core        :  $rekk"
-echo -e "Current Domain  :  $(cat /etc/$bec/domain)"
-echo -e "IP-VPS          :  $IPVPS"
+echo -e " ⚙️ Use Core        :  $rekk"
+echo -e " ⚙️ CPU Model       :  $cname"
+echo -e " ⚙️ CPU Freq        :  $freq MHz"
+echo -e " ⚙️ Total Ram       :  $team MB"
+echo -e " ⚙️ Total Swap      :  $swap MB"
+echo -e " ⚙️ Current Domain  :  $(cat /etc/$bec/domain)"
+echo -e " ⚙️ Isp Name        :  $ISP"
+echo -e " ⚙️ Kota            :  $CITY"
+echo -e " ⚙️ Time            :  $WKT"
+echo -e "\e[36m╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m"
+echo -e " \E[0;41;36m             ⇱ Status Layanan Service ⇲         \E[0m"
+echo -e "\e[36m╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m"
+echo -e "  [ SSH WebSocket : ON ]       [ XRAY-CDN : ON ]"
 echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;41;36m                 SSH MENU                   \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
@@ -117,7 +131,7 @@ echo -e "\e[36m╘════════════════════�
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
 echo -ne
 else
-echo -e "[\033[1;32m999\033[0m] • \033[0;31mUpdate Available ! Go choice 69 to update\033[0m"
+echo -e "[\033[1;36m999\033[0m] • \033[0;31mUpdate Available ! Go choice 69 to update\033[0m"
 echo ""
 fi
 echo -e "\033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
@@ -136,7 +150,7 @@ echo -e "\033[0;33mVersion : $(cat /opt/.ver) Update available to $serverV\e[0m"
 echo -e "\e[36m╒═════════════════════════════════════════════╕\033[0m"
 echo ""
 echo -e "[ \033[0;31mChangelog\033[0m ]"
-curl -sS https://raw.githubusercontent.com/bokir-tampan/biji/main/clgshow
+curl -sS https://raw.githubusercontent.com/Pedoindo/scvip/main/clgshow
 echo -e "
 "
 fi

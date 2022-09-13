@@ -80,7 +80,7 @@ ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
 IPVPS=$(curl -s ipv4.icanhazip.com )
-serverV=$( curl -sS https://raw.githubusercontent.com/bokir-tampan/test/main/versi)
+serverV=$( curl -sS https://raw.githubusercontent.com/Pedoindo/scvip/main/Versi)
 
 if [ "$cekup" = "day" ]; then
 echo -e " ⚙️ System Uptime   :  $uphours $upminutes $uptimecek"
